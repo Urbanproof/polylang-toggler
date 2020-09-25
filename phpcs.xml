@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="PHPCS Configuration">
+  <file>polylang-toggler.php</file>
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array" value="pl-toggler" />
+    </properties>
+  </rule>
+  <!-- <file>includes/</file> -->
+  <rule ref="UWPCS"/>
+</ruleset>

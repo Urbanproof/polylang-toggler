@@ -1,0 +1,29 @@
+{
+    "name": "urbanproof/polylang-toggler",
+    "description": "Introduces new type of languange switcher - toggler that cycles between languages",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+      {
+          "name": "Iikka Timlin",
+          "homepage": "https://github.com/Urbanproof/"
+      }
+    ],
+    "support": {
+        "issues": "https://github.com/Urbanproof/",
+        "docs": "https://github.com/Urbanproof/"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Urbanproof/wp-coding-standards.git"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "urbanproof/wp-coding-standards": "^1.0"
+    }
+}
