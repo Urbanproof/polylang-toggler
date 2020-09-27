@@ -139,8 +139,12 @@ function cycle_language( $template )
 	}
 	$redirect_url = null;
 	if ( is_singular() && \pll_is_translated_post_type( $post->post_type ) ) {
-		$redirect_url = get_permalink( \pll_get_post( $post->ID, $next_lang ) );
-	} else {
+		$translated_post_id = \pll_get_post( $post->ID, $next_lang );
+		if ( is_numeric( $translated_post_id ) ) {
+			$redirect_url = get_permalink( $translated_post_id );
+		}
+	}
+	if ( is_null( $redirect_url ) ) {
 		$redirect_url = \pll_home_url( $next_lang );
 	}
 	wp_safe_redirect( $redirect_url );
